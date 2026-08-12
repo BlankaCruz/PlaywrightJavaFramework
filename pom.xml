@@ -108,8 +108,8 @@
     </profiles>
 
     <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <!-- Define the version of Allure you want to use via the allure.version property -->
         <allure.version>2.24.0</allure.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
