@@ -4,6 +4,27 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
+    workflow_dispatch:
+      inputs:
+        browser:
+          description: 'Browser to run tests on'
+          required: true
+          default: 'chrome'
+          type: choice
+          options:
+            - chrome
+            - firefox
+            - webkit
+        environment:
+          description: 'Environment to run tests on'
+          required: true
+          default: 'qa'
+          type: choice
+          options:
+            - qa
+            - dev
+            - prod
 jobs:
   test:
     timeout-minutes: 60
